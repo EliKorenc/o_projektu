@@ -69,7 +69,6 @@ nav ul li a:hover {
   text-align: justify;
   gap: 3rem;
   align-items: center;
-
 }
 
 
@@ -89,6 +88,7 @@ nav ul li a:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 5px;
+  background-image: linear-gradient(#2e267f, #a007bb);
 }
 
 h2 {
@@ -108,6 +108,7 @@ h2 {
   border: 2px solid rgb(29, 29, 103);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  background-image: linear-gradient(#2e267f, #a007bb);
 }
 
 .obsah__o-nas img {
