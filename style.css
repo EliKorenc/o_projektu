@@ -58,7 +58,7 @@ nav ul li a {
   text-decoration: none;
   padding: 10px 20px;
   color: #f6f4e6;
-  font-size: 0.9em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 500;
   /* display: inline-block; */
@@ -68,11 +68,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /* background-color: white; */
   color: #fddb3a;
 }
 
 /* Obrázek rakety */
+
+.obsah__raketka {
+  width: 300px;
+}
 
 
 /* Kontejner */
@@ -96,6 +99,9 @@ nav ul li a:hover {
 /* Sekce úvod */
 
 .obsah__uvod {
+  float: right;
+  width: 60%;
+  margin: 300px;
   border: 2px solid rgb(29, 29, 103);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -131,5 +137,6 @@ footer {
   color: white;
   font-size: 12px;
   text-align: center;
-  margin-bottom: 0
+  margin-bottom: 0;
+  margin-top: 0;
 }
