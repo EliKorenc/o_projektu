@@ -18,7 +18,6 @@ body {
   background-image: url('./img/background_image.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   margin: 0;
 }
 
