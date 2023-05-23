@@ -25,7 +25,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh
+  min-height: 100vh
 }
 
 /* Začátek navigace */
@@ -65,26 +65,27 @@ nav ul li a:hover {
   color: #fddb3a;
 }
 
+
 /* Obrázek rakety */
 
 .obsah__raketka {
-  width: 300px;
+  /* width: 300px; */
+  height: 65vh;
 }
 
 
-/* Kontejner */
+/* Main - obsah */
 
 .obsah {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: justify;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   /* align-items: flex-start; */
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
-
 
 .obsah__nadpis {
   font-size: 3em;
@@ -95,8 +96,6 @@ nav ul li a:hover {
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
 }
-
-/* Sekce úvod */
 
 .obsah__uvod {
   float: right;
@@ -125,7 +124,6 @@ nav ul li a:hover {
   /* display: block; */
 }
 
-
 span {
   position: relative;
   left: 2rem;
@@ -138,8 +136,13 @@ span {
 footer {
   background-color: #2e267f;
   color: white;
-  font-size: 12px;
-  text-align: center;
-  position: relative;
-  bottom: 0;
+  font-size: 0.5em;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__odkaz img {
+  height: 2rem;
 }
