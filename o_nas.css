@@ -63,7 +63,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: justify;
+  /* text-align: justify; */
   gap: 3rem;
   align-items: center;
   /* align-items: flex-start; */
@@ -88,7 +88,8 @@ img {
 
 .obsah__o-nas {
   display: flex;
-
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .obsah__o-nas-veronika,
@@ -99,4 +100,10 @@ img {
   background-image: linear-gradient(#2e267f, #a007bb);
   border-radius: 15px;
   box-shadow: 0 0 15px #80a19ab7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
 }
