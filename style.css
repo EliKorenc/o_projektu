@@ -144,7 +144,15 @@ footer {
   align-items: center;
 }
 
-.footer__odkaz img {
+.footer__odkaz--akademie {
+  color: white;
+}
+
+.footer__odkaz--akademie:hover {
+  color: #fddb3a;
+}
+
+.footer__odkaz--czechitas img {
   height: 2rem;
   background-color: #2e267f;
   display: inline-block;
