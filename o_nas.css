@@ -56,17 +56,18 @@ nav ul li a:hover {
   color: #fddb3a;
 }
 
+
 /* Kontejner */
 
 .obsah {
   display: flex;
+  flex-direction: column;
+  /* Přidáno */
   flex-wrap: wrap;
   justify-content: center;
-  /* text-align: justify; */
   gap: 3rem;
   align-items: center;
-  /* align-items: flex-start; */
-  /* flex-grow: 1; */
+
 }
 
 
@@ -78,6 +79,16 @@ nav ul li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
+  margin-bottom: 0.4em;
+}
+
+.obsah__o-nas--nadpis {
+  display: flex;
+  font-size: 2em;
+  color: blueviolet;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: -1.5em;
 }
 
 img {
