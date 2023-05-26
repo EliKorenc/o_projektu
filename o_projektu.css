@@ -1,1 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
 
+
+.o-projektu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.o-projektu__nadpis {
+  font-size: 2em;
+  color: blueviolet;
+  text-align: center;
+
+}
+
+.o-projektu__popis {
+  float: right;
+  width: 60%;
+  background-image: linear-gradient(#2e267f, #a007bb);
+  box-shadow: 0 0 15px #80a19ab7;
+  border-radius: 20px;
+  padding: 1rem;
+}
