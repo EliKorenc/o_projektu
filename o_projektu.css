@@ -3,7 +3,6 @@ body {
   flex-direction: column;
 }
 
-
 .o-projektu {
   display: flex;
   flex-direction: column;
@@ -11,13 +10,11 @@ body {
   align-items: center;
 }
 
-
 .o-projektu__nadpis {
   font-size: 2em;
   color: blueviolet;
   text-align: center;
   margin: 0.5rem;
-
 }
 
 .o-projektu__popis {
@@ -27,4 +24,15 @@ body {
   box-shadow: 0 0 15px #80a19ab7;
   border-radius: 20px;
   padding: 1rem;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.planetka_strach {
+  height: 8rem;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -180px;
+  right: -180px;
+  /* z-index: 1; */
 }
