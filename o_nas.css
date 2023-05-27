@@ -129,13 +129,28 @@
     border-radius: 50%;
   }
 
+  .kosmonaut {
+    width: 150px;
+    transform-origin: center;
+  }
 
-  .raketka {
-    width: 100px;
-    /* position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 2; */
+  .kosmonaut:hover {
+    cursor: pointer;
+    animation: swing 1s ease-in-out infinite;
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(10deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
   }
 
   .obsah__o-nas {
@@ -178,4 +193,8 @@
       width: 100%;
       margin: 10px;
     }
+  }
+
+  strong {
+    color: #fddb3a
   }
