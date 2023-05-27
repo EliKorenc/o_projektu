@@ -198,4 +198,36 @@ footer {
 
 img {
   background: none;
+  cursor: pointer;
+}
+
+.animace {
+  position: relative;
+  /* Přidáme relativní pozici pro umístění rakety */
+}
+
+@keyframes flyout {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+
+.flyout {
+  animation-name: flyout;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  /* Nastavíme počet opakování na 1, aby se animace provedla pouze jednou */
+}
+
+@media (max-width: 767px) {
+  .flyout {
+    animation: none;
+  }
 }
