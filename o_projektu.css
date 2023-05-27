@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .o-projektu__nadpis {
@@ -35,4 +36,20 @@ body {
   top: -180px;
   right: -180px;
   /* z-index: 1; */
+}
+
+.o-projektu__foto {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+
+.o-projektu__foto img {
+  max-width: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px #80a19ab7;
 }
