@@ -173,7 +173,7 @@ p {
 
 footer {
   /* background-color: #2e267f; */
-  color: white;
+  background-color: rgba(255, 255, 255, 0.363);
   font-size: 0.5em;
   gap: 0.5rem;
   display: flex;
@@ -191,9 +191,11 @@ footer {
 }
 
 .footer__odkaz--czechitas img {
-  background-color: white;
   height: 1rem;
-  /* background-color: #2e267f; */
+  /* background-color: #4a42a3; */
   display: inline-block;
+}
+
+img {
   background: none;
 }
