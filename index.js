@@ -1,8 +1,6 @@
-const navLinks = document.querySelectorAll('.nav-link');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.menu');
 
-navLinks.forEach(function (navLink) {
-  navLink.addEventListener('click', function () {
-    var navbarCollapse = document.querySelector('.navbar-collapse');
-    navbarCollapse.classList.remove('show');
-  });
+hamburgerMenu.addEventListener('click', function () {
+  menu.classList.toggle('open');
 });

@@ -136,3 +136,80 @@ body {
     gap: 0.5rem;
   }
 }
+
+/* Začátek navigace */
+
+header {
+  background-color: #2e267f;
+  color: white;
+  padding: 0.5rem;
+  /* text-align: end; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+}
+
+.hamburger {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin-left: 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #f6f4e6;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  color: #fddb3a;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  header {
+    text-align: end;
+  }
+}
+
+@media (max-width: 1000px) {
+  .planetka_strach {
+    display: none;
+  }
+}
