@@ -13,6 +13,18 @@ html {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 1em;
+  }
+}
+
 body {
   color: white;
   background-image: url('./img/background_image.svg');
@@ -72,7 +84,7 @@ nav ul li a:hover {
 
 .obsah__raketka {
   /* width: 300px; */
-  height: 65vh;
+  height: 20rem;
 }
 
 
@@ -83,9 +95,24 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: justify;
-  gap: 1rem;
   align-items: center;
+  /* margin-left: -2rem; */
+  gap: 1rem;
   flex-grow: 1;
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .obsah {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .obsah {
+    margin: 1rem;
+  }
 }
 
 .obsah__nadpis {
@@ -100,11 +127,21 @@ nav ul li a:hover {
 
 .obsah__uvod {
   float: right;
-  width: 60%;
+  max-width: 60%;
   background-image: linear-gradient(#2e267f, #a007bb);
   box-shadow: 0 0 15px #80a19ab7;
   border-radius: 20px;
   padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .obsah__uvod {
+    max-width: 90%;
+  }
+}
+
+p {
+  margin-top: 12px;
 }
 
 .obsah__foto {
@@ -115,6 +152,15 @@ nav ul li a:hover {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  .obsah__foto {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
 .obsah__foto img {
   width: 100px;
   height: 100px;
@@ -122,23 +168,18 @@ nav ul li a:hover {
   box-shadow: 0 0 15px 8px #80a19ab7;
 }
 
-span {
-  position: relative;
-  right: 2rem;
-  bottom: 0.5rem;
-}
-
 
 /* Patička */
 
 footer {
-  background-color: #2e267f;
+  /* background-color: #2e267f; */
   color: white;
   font-size: 0.5em;
   gap: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .footer__odkaz--akademie {
@@ -150,7 +191,8 @@ footer {
 }
 
 .footer__odkaz--czechitas img {
-  height: 2rem;
-  background-color: #2e267f;
+  background-color: white;
+  height: 1rem;
+  /* background-color: #2e267f; */
   display: inline-block;
 }
