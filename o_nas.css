@@ -39,7 +39,6 @@
     background-color: #2e267f;
     color: white;
     padding: 0.5rem;
-    /* padding: 20px; */
     text-align: end;
   }
 
@@ -57,15 +56,9 @@
   nav ul li a {
     text-decoration: none;
     padding: 0.5rem;
-    /* padding: 1Opx 20px; */
     color: #f6f4e6;
-    /* font-size: 2em; */
-    /* text-transform: uppercase; */
     font-weight: 500;
-    /* display: inline-block; */
     width: 60px;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
   }
 
   nav ul li a:hover {
@@ -79,7 +72,6 @@
   .obsah {
     display: flex;
     flex-direction: column;
-    /* Přidáno */
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
@@ -109,18 +101,10 @@
     margin-bottom: -2.0em;
   }
 
-  /* .obsah__o-nas-veronika-container {
-    position: relative;
-  } */
-
   .fotoVeronika {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    /* position: absolute;
-    top: 227px;
-    left: 267px;
-    z-index: 1; */
   }
 
   .fotoEliska {
