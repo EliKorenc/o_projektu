@@ -71,14 +71,12 @@ body {
 @media screen and (max-width: 768px) {
   .o-projektu__popis {
     width: 80%;
-    gap: 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .o-projektu__popis {
-    width: 100%;
-    margin: 1rem;
+    width: 90%;
   }
 }
 
@@ -208,8 +206,17 @@ nav {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 769px) {
   .planetka_strach {
+    /* height: 5rem; */
     display: none;
   }
 }
+
+
+
+/* @media (max-width: 1000px) {
+  .planetka_strach {
+    display: none;
+  }
+} */
