@@ -173,6 +173,7 @@ a {
 @media screen and (max-width: 480px) {
   .obsah__uvod {
     max-width: 90%;
+
   }
 }
 
