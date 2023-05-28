@@ -32,108 +32,12 @@ body {
   margin: 0;
 }
 
-.container {
+.container__o-projektu {
   display: flex;
   flex-direction: column;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
-.obsah__nadpis {
-  font-size: 2em;
-}
-
-.o-projektu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.o-projektu__nadpis {
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  margin: 0.5rem;
-}
-
-.o-projektu__popis {
-  float: right;
-  width: 60%;
-  background-image: linear-gradient(#2e267f, #a007bb);
-  box-shadow: 0 0 15px #80a19ab7;
-  border-radius: 20px;
-  padding: 1rem;
-  position: relative;
-  /* z-index: 2; */
-}
-
-@media screen and (max-width: 768px) {
-  .o-projektu__popis {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .o-projektu__popis {
-    width: 90%;
-  }
-}
-
-.planetka_strach {
-  height: 8rem;
-  transform: rotate(20deg);
-  position: absolute;
-  top: -143px;
-  right: -180px;
-}
-
-.planetka_strach:hover {
-  animation: shake 0.5s infinite;
-}
-
-@keyframes shake {
-
-  0%,
-  100% {
-    transform: translateX(0) rotate(20deg);
-  }
-
-  25% {
-    transform: translateX(10px) rotate(20deg);
-  }
-
-  50% {
-    transform: translateX(-10px) rotate(20deg);
-  }
-
-  75% {
-    transform: translateX(10px) rotate(20deg);
-  }
-}
-
-.o-projektu__foto {
-  display: flex;
-  flex: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-}
-
-
-.o-projektu__foto img {
-  max-width: 30%;
-  border-radius: 20px;
-  box-shadow: 0 0 20px 5px #80a19ab7;
-}
-
-@media screen and (max-width: 768px) {
-  .o-projektu__foto img {
-    width: 100%;
-    gap: 0.5rem;
-  }
-}
 
 /* Začátek navigace */
 
@@ -208,15 +112,127 @@ nav {
 
 @media (max-width: 769px) {
   .planetka_strach {
-    /* height: 5rem; */
     display: none;
   }
 }
-
-
 
 /* @media (max-width: 1000px) {
   .planetka_strach {
     display: none;
   }
 } */
+
+/* Obsah */
+
+.o-projektu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+.obsah__nadpis {
+  font-size: 2em;
+}
+
+.o-projektu__obsah {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .o-projektu__obsah {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .o-projektu__obsah {
+    width: 90%;
+  }
+}
+
+.o-projektu__nadpis {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.o-projektu__popis {
+  float: right;
+  background-image: linear-gradient(#2e267f, #a007bb);
+  box-shadow: 0 0 15px #80a19ab7;
+  border-radius: 20px;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Planetka */
+
+.planetka_strach {
+  height: 8rem;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -143px;
+  right: -180px;
+}
+
+.planetka_strach:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0) rotate(20deg);
+  }
+
+  25% {
+    transform: translateX(10px) rotate(20deg);
+  }
+
+  50% {
+    transform: translateX(-10px) rotate(20deg);
+  }
+
+  75% {
+    transform: translateX(10px) rotate(20deg);
+  }
+}
+
+.o-projektu__popis .o-projektu__foto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  max-width: 100%;
+  gap: 1rem;
+}
+
+.o-projektu__foto img {
+  /* width: 10rem;
+  height: auto; */
+  max-width: 48%;
+  /* max-height: auto; */
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px #80a19ab7;
+}
+
+@media screen and (max-width: 768px) {
+  .o-projektu__foto img {
+    min-width: 100%;
+    gap: 1rem;
+  }
+}
