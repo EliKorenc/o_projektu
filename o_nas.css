@@ -119,6 +119,20 @@
   }
 
 
+  @media (max-width: 425px) {
+    .obsah {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .obsah {
+      width: 80%;
+    }
+  }
+
+
+
   .obsah__nadpis {
     font-size: 2em;
     color: blueviolet;
@@ -208,7 +222,7 @@
   }
 
 
-
+  /* 
   @media screen and (max-width: 480px) {
 
     .obsah__o-nas-veronika,
@@ -216,7 +230,8 @@
       width: 100%;
       margin: 10px;
     }
-  }
+  } */
+
 
   strong {
     color: #fddb3a
