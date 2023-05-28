@@ -34,7 +34,6 @@ body {
 }
 
 /* Začátek navigace */
-
 header {
   background-color: #2e267f;
   color: white;
@@ -105,7 +104,6 @@ nav {
 }
 
 
-
 /* Kontejner */
 
 .obsah {
@@ -117,21 +115,6 @@ nav {
   align-items: center;
 
 }
-
-
-@media (max-width: 425px) {
-  .obsah {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .obsah {
-    width: 80%;
-  }
-}
-
-
 
 .obsah__nadpis {
   font-size: 2em;
@@ -154,17 +137,6 @@ nav {
   margin-bottom: -2.0em;
 }
 
-.fotoVeronika {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-
-.fotoEliska {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
 
 .kosmonaut {
   width: 150px;
@@ -197,6 +169,7 @@ nav {
   margin-top: -0.5em;
 }
 
+
 @media screen and (max-width: 768px) {
   .obsah__o-nas {
     flex-direction: column;
@@ -222,7 +195,7 @@ nav {
 }
 
 
-/* 
+
 @media screen and (max-width: 480px) {
 
   .obsah__o-nas-veronika,
@@ -230,7 +203,7 @@ nav {
     width: 100%;
     margin: 10px;
   }
-} */
+}
 
 
 strong {
