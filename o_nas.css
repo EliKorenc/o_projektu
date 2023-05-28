@@ -236,3 +236,8 @@
   strong {
     color: #fddb3a
   }
+
+  .github_logo {
+    width: 40px;
+    filter: invert(100%);
+  }
