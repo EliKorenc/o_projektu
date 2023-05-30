@@ -247,7 +247,6 @@ img {
 
 .animace {
   position: relative;
-  /* Přidáme relativní pozici pro umístění rakety */
 }
 
 @keyframes flyout {
@@ -256,8 +255,8 @@ img {
   }
 
   100% {
-    transform: translateY(-100%);
-    visibility: hidden;
+    transform: translateY(-100vh);
+    opacity: hidden;
   }
 }
 

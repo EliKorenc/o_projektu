@@ -15,7 +15,7 @@ footerElm.innerHTML = `
 >
 <div class="footer__odkaz--czechitas">
   <a href="https://www.czechitas.cz/" target="_blank"
-    ><img src="./img/logo_czechitas.svg" alt="logo Czechitas z.ú."
+    ><img src="./img/logo_czechitas.png" alt="logo Czechitas z.ú."
   /></a>
 </div>
 `;
